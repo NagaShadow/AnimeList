@@ -1,0 +1,19 @@
+
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+.selected{
+    -fx-background-color: #F3F3F3;
+}
+
+.choice-box {
+    -fx-background-color: #3DB4F2;
+    -fx-mark-color: white; // arrow color
+}
+.choice-box > .label {
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+    -fx-font-weight: 900;
+    -fx-alignment: center;
+}
+

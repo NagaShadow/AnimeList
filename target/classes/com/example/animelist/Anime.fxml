@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="vboxContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="160.0" style="-fx-border-radius: 15;" styleClass="shadow" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.animelist.Controleur.AnimeControlleur">
+   <children>
+      <ImageView fx:id="imageAnime" fitHeight="230.0" fitWidth="160.0" onMouseClicked="#TestPagePersoAnime" pickOnBounds="true" preserveRatio="true">
+         <viewport>
+            <Rectangle2D />
+         </viewport></ImageView>
+      <Label fx:id="titreAnime" layoutX="10.0" text="Fruits Baskets The Final Season" textFill="#979797" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets top="8.0" />
+         </padding></Label>
+   </children>
+</VBox>

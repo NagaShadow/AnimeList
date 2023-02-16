@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.animelist.Controleur.PagePersoAnimeController">
+   <children>
+      <ImageView id="BannerImage" fx:id="BannerImage" fitHeight="300.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView id="ImageAnime" fx:id="ImageAnime" fitHeight="288.0" fitWidth="200.0" layoutX="70.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="15.0" radius="7.0" width="15.0" />
+         </effect></ImageView>
+      <Label id="TitreAnime" fx:id="TitreAnime" layoutX="296.0" layoutY="279.0" text="Titre">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label id="Commentaire" fx:id="Commentaire" layoutX="296.0" layoutY="323.0" text="Comment" />
+      <ChoiceBox fx:id="comboBoxAvancement" layoutX="70.0" layoutY="467.0" prefHeight="35.0" prefWidth="150.0" stylesheets="@style.css" />
+   </children>
+</AnchorPane>

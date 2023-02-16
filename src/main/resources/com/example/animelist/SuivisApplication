@@ -1,0 +1,19 @@
+Nom Application : AnimeList
+Objectif : Creer un Logiciel qui référence mes animes vu sous forme d'object (un peu comme le site Wakanim)
+
+Les Objectif(s) :
+/ Lister les animes d'un fichier XML pris sur mon AnimeList (MAL)
+/ Pouvoir ajouter des animes à se fichier
+/ Utiliser des Tags (Ex : "Top - 10" - "Best of All Time" - "Full Stars" - "Bad Anime :("
+/ Avoir une SearchBox pour rechercher plus vite dans la liste
+/ Un bouton d'ajout pour ajouter un anime (Avec bien évidenemt un pannel d'ajout)
+/ Une section Top 10
+/ Une section qui différencie ce qu'il y a sur MAL et ce qu'il y a de présent sur le Logiciel
+    -> Un systsem de detection de différence entre les deux qui nous dis lequel ont été Add et qu'il faut rajouter à MAL ou a AnimeList
+/ Une page par anime quand on clique dessus avec divers explications et une photo princiaple de l'anime (comme celle de la liste classique dans le Main)
+
+Réalisé :
+1 - La récupération du fichier sur MAL ✔️
+2 - La création des Objects<Anime> de la liste ✔️
+
+

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="xercesImpl">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../1 - Cours Julien/Programmation/Bloc2/Java/Atelier10b(Parsing XML)/ressources/MethodeSAX/xercesImpl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../1 - Cours Julien/Programmation/Bloc2/Java/Atelier10b(Parsing XML)/ressources/MethodeSAX/xml-apis.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

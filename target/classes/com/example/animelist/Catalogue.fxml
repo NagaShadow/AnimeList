@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #E9EEF3;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.animelist.Controleur.CatalogueControlleur">
+   <children>
+      <Label fx:id="labelSearch" layoutX="38.0" layoutY="14.0" text="Search" textFill="#7c787e">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font></Label>
+      <TextField fx:id="SearchBox" layoutX="136.0" layoutY="10.0" prefHeight="33.0" prefWidth="260.0" stylesheets="@searchbar.css">
+         <styleClass>
+            <String fx:value="shadow" />
+            <String fx:value="contour" />
+         </styleClass></TextField>
+      <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="143.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 20%;">
+         <image>
+            <Image url="@images/iconsearch.png" />
+         </image></ImageView>
+      <Button fx:id="buttonOption" layoutX="418.0" layoutY="10.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="52.0" text="Button" />
+      <ScrollPane fx:id="Scrollpane" layoutX="23.0" layoutY="60.0" pannable="true" prefHeight="732.0" prefWidth="1124.0" style="-fx-border-color: #E9EEF3; -fx-background-color: #E9EEF3;">
+         <content>
+            <GridPane fx:id="AnimeContainer" style="-fx-background-color: #E9EEF3; -fx-border-color: #E9EEF3;">
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <padding>
+                  <Insets top="-50.0" />
+               </padding>
+            </GridPane>
+         </content></ScrollPane>
+   </children>
+</AnchorPane>

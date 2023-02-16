@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ Created by XML Export feature at MyAnimeList.net
+ Version 1.1.0
+-->
+
+<myanimelist>
+
+    <myinfo>
+        <user_id>7394479</user_id>
+        <user_name>NagaShadow</user_name>
+        <user_export_type>1</user_export_type>
+        <user_total_anime>166</user_total_anime>
+        <user_total_watching>10</user_total_watching>
+        <user_total_completed>137</user_total_completed>
+        <user_total_onhold>0</user_total_onhold>
+        <user_total_dropped>4</user_total_dropped>
+        <user_total_plantowatch>15</user_total_plantowatch>
+    </myinfo>
+
+    <anime>
+        <series_title><![CDATA[Mushoku Tensei Jobless Reincarnation]]></series_title>
+        <series_episodes>24</series_episodes>
+        <my_watched_episodes>24</my_watched_episodes>
+        <my_score>10</my_score>
+        <my_status>Completed</my_status>
+        <my_comments><![CDATA[When a 34-year-old underachiever gets run over by a bus,his story doesn’t end there. Reincarnated in a new world as an infant,Rudeus will seize every opportunity to live the life he’s always wanted. Armed with new friends,some freshly acquired magical abilities,and the courage to do the things he’s always dreamed of,he’s embarking on an epic adventure—with all of his past experience intact!
+]]></my_comments>
+        <my_priority>HIGH</my_priority>
+        <my_tags><![CDATA[]]></my_tags>
+        <image>MushokuTensei.jpg</image>
+        <banner>Banner_Mushoku_Tensei.jpg</banner>
+    </anime>
+
+    <anime>
+        <series_title><![CDATA[86]]></series_title>
+        <series_episodes>11</series_episodes>
+        <my_watched_episodes>11</my_watched_episodes>
+        <my_score>10</my_score>
+        <my_status>Completed</my_status>
+        <my_comments><![CDATA[]]></my_comments>
+        <my_priority>LOW</my_priority>
+        <my_tags><![CDATA[]]></my_tags>
+        <image>86.jpg</image>
+    </anime>
+
+    <anime>
+        <series_title><![CDATA[5-toubun no Hanayome ∬]]></series_title>
+        <series_episodes>12</series_episodes>
+        <my_watched_episodes>12</my_watched_episodes>
+        <my_score>10</my_score>
+        <my_status>Completed</my_status>
+        <my_comments><![CDATA[]]></my_comments>
+        <my_priority>LOW</my_priority>
+        <my_tags><![CDATA[]]></my_tags>
+        <image>toubun2.jpg</image>
+    </anime>
+
+
+</myanimelist>
