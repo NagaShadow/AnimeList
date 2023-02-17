@@ -8,7 +8,7 @@ import org.xml.sax.helpers.DefaultHandler;
 
 public class LecteurXML extends DefaultHandler {
 
-    ObservableList<Anime> LaListe = FXCollections.observableArrayList();;
+    ObservableList<Anime> LaListe = FXCollections.observableArrayList();
     Myanimelist MaListe;
     Anime MonAnime;
     String baliseCourante;

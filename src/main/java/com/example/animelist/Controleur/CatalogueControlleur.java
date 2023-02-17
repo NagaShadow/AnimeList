@@ -2,6 +2,7 @@ package com.example.animelist.Controleur;
 
 import com.example.animelist.Class.Anime;
 import com.example.animelist.Class.LecteurXML;
+import com.example.animelist.Class.XMLParser;
 import com.example.animelist.HelloApplication;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
@@ -46,17 +47,8 @@ public class CatalogueControlleur implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         try{
-            Class c = Class.forName("org.apache.xerces.parsers.SAXParser");
-            XMLReader parser = (XMLReader) c.newInstance();
-            LecteurXML MonLecteur = new LecteurXML();
-            parser.setContentHandler(MonLecteur);
-            parser.parse("src/main/resources/com/example/animelist/listeanimes.xml");
-            MaListe = MonLecteur.retouneLaListe();
-        }
-        catch (Exception e){
-            System.out.println(e.getMessage());
-        }
-        try{
+            XMLParser monParse = new XMLParser();
+            MaListe = monParse.start();
             for(Anime anime : MaListe){
                 FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Anime.fxml"));
                 VBox cardBox = fxmlLoader.load();
@@ -67,6 +59,8 @@ public class CatalogueControlleur implements Initializable {
                     column = 0;
                     row++;
                 }
+                AnimeContainer.add(cardBox, column++, row);
+                GridPane.setMargin(cardBox, new Insets(12));
 
                 // SERT A TRANSFORMER UN ANIME EN FICHIER .XML
 
@@ -141,9 +135,6 @@ public class CatalogueControlleur implements Initializable {
 //                } catch (TransformerException tfe) {
 //                    tfe.printStackTrace();
 //                }
-
-                AnimeContainer.add(cardBox, column++, row);
-                GridPane.setMargin(cardBox, new Insets(12));
             }
         }
         catch (Exception e){
