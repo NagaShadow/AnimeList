@@ -22,7 +22,6 @@ public class Anime {
     }
 
     public Anime(){
-
     }
 
     public String getTitre() {

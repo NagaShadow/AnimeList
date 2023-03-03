@@ -17,7 +17,7 @@ import java.io.IOException;
 
 public class XMLParser {
     private static final String FILENAME = "src/main/resources/com/example/animelist/test.xml";
-    static ObservableList<Anime> LaListe = FXCollections.observableArrayList();
+    ObservableList<Anime> LaListe = FXCollections.observableArrayList();
 
     public ObservableList<Anime> start(){
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
@@ -38,11 +38,10 @@ public class XMLParser {
             System.out.println("------");
 
             NodeList list = doc.getElementsByTagName("anime");
-
+            System.out.println(list.getLength());
             for (int temp = 0; temp < list.getLength(); temp++) {
 
                 Anime MonAnime = new Anime();
-                LaListe.add(MonAnime);
 
                 Node node = list.item(temp);
 
@@ -73,8 +72,8 @@ public class XMLParser {
                     MonAnime.setPropriete(my_priority);
                     MonAnime.setTags(my_tags);
                     MonAnime.setLinkImage(image);
-
                 }
+                LaListe.add(MonAnime);
             }
 
         } catch (ParserConfigurationException | SAXException | IOException e) {
